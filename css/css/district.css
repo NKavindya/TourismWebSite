@@ -1,0 +1,176 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #0b3d5f;
+    color: #fff;
+}
+
+.nav-links a {
+    color: #fff;
+}
+
+.nav-links {
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color: #427496;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+.subcategory {
+    position: relative;
+}
+
+.dropdown {
+    background-color: rgb(76, 128, 163);
+    padding: 1em 0;
+    position: absolute;
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+    transition: .2s;
+}
+
+.dropdown li+li {
+    margin-top: 10px;
+}
+
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: left;
+}
+
+.dropdown li:hover {
+    background-color: #5083a5;
+}
+
+.subcategory:hover .dropdown {
+    display: block;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 3px;
+    margin-left: 2px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #a1bed1;
+    
+}
+
+.paragraph {
+    text-align: justify;
+    width: 60%;
+}
+ .image {
+     align-content: center;
+ }
+
+.disname {
+    color: #0b3d5f;
+    font-size: 25px;
+}
+
+.right {
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    width: 30%;
+    background-color: #fff;
+    padding-top: 100px;
+    padding-bottom: 2600px;
+}
+
+.right p {
+    text-align: justify;
+    font-size: 18px;
+    width: 95%;
+    padding-left:15px;
+    padding-right: 15px;
+    color: #0b3d5f;
+
+}
+.right .touristplace h4 {
+    text-align: center;
+    color: #427496;
+}
+
+.right .touristplace{
+    text-align: justify;
+    font-size: 18px;
+    width: 95%;
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+.btn1 {
+    width: 100px;
+    height: 30px;
+    border: none;
+    color: rgb(11, 52, 80);
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 1rem;
+    outline: none;
+    border: 3px solid rgb(4, 28, 37);
+    position: relative;
+    z-index: 1;
+
+}
+
+.btn1:hover {
+    color: rgb(159, 209, 233);
+    cursor: pointer;
+}
+
+.btn1::before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color: #153952;
+
+}
+
+.btn1:hover:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+
+}

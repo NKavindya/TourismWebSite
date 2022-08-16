@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <tittle>
+    </tittle>
+    <link href="css/Gallery.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a href="Srilanka.html">HOME</a></li>
+                <li class="subcategory">
+                    <a href="About.html">ABOUT US</a>
+                </li>
+                <li class="subcategory">
+                    <a href="Info.html">TOURIST INFROMATION<i class="arrow down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="Province.html">PROVINCE WISE</a></li>
+                        <li><a href="district.html">DESTRICT WISE</a></li>
+                    </ul>
+                </li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="todo.html">TO-DO LIST</a></li>
+            </div>
+        </ul>
+    </nav>
+    <p>
+    <div class="container">
+        <div class="image-container">
+            <div class="image"><img src="images/img1.jpg" alt=""></div>
+            <div class="image"><img src="images/img2.jpg" alt=""></div>
+            <div class="image"><img src="images/img3.jpg" alt=""></div>
+            <div class="image"><img src="images/img4.jpg" alt=""></div>
+            <div class="image"><img src="images/img5.jpg" alt=""></div>
+            <div class="image"><img src="images/img6.jpg" alt=""></div>
+            <div class="image"><img src="images/img7.jpg" alt=""></div>
+            <div class="image"><img src="images/img8.jpg" alt=""></div>
+            <div class="image"><img src="images/img9.jpg" alt=""></div>
+            <div class="image"><img src="images/sl11.jpg" alt=""></div>
+            <div class="image"><img src="images/img11.jpg" alt=""></div>
+            <div class="image"><img src="images/img12.jpg" alt=""></div>
+            <div class="image"><img src="images/img13.jpg" alt=""></div>
+            <div class="image"><img src="images/img14.jpg" alt=""></div>
+            <div class="image"><img src="images/img15.jpg" alt=""></div>
+            <div class="image"><img src="images/img16.jpg" alt=""></div>
+            <div class="image"><img src="images/img17.jpg" alt=""></div>
+            <div class="image"><img src="images/img18.jpg" alt=""></div>
+            <div class="image"><img src="images/img19.jpg" alt=""></div>
+            <div class="image"><img src="images/img20.jpg" alt=""></div>
+
+        </div>
+
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="images/img1.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onClick = () =>{
+                document.querySelector('.popup-image').style.display='block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+            }
+        });
+        document.querySelector('.popup-image span').onclick = () => {
+            document.querySelector('.popup-image').style.display = 'none';
+
+        }
+    </script>
+    </p>
+</body>
+</html>
